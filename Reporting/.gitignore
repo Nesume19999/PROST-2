@@ -1,0 +1,9 @@
+# Generated reports (regenerate with run_report.py or R1)
+report_output/
+
+# Stata prepared intermediates, if written next to the code
+_prep_*.dta
+
+# Python caches
+__pycache__/
+*.pyc
