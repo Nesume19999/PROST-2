@@ -84,7 +84,7 @@ TODO: Create GUI
 	local job_entry_model 		= "job_entry_model_MEX_10_final" // "job_entry_model_MEX_10_last_cod_log" //  job_entry_model_MEX_10_final"
 
 //	Wage model data
-	local lifecycle_model 		= "lifecycle_MEX_10" 	// Model estimates for wage growth 
+	local lifecycle_model 		= "lifecycle_wages_`country'" 	// Model estimates for wage growth (matches name saved by "05 - ... life cycle wage growth profiles.do")
 
 	
 	

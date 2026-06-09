@@ -224,7 +224,7 @@ Description:	For building PROST v2 pension model
 //	Compute the pension entrance rates in terms of population (Note: population in in '000s)
 	generate oa_rate_pop 		= oa_pension_adj   / (pop * 1000)
 	generate disa_rate_pop 		= disa_pension_adj / (pop * 1000)
-	generate survival_rate_pop 	= oa_pension_adj   / (pop * 1000)
+	generate survival_rate_pop 	= survivor_pension_adj / (pop * 1000)
 	
 //	Keep only those years that we want to include (the most recent ones)
 	drop year
