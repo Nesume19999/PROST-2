@@ -54,7 +54,7 @@ CLI options:
 | `01 - ... baseyear dataset` | `prost2/preprocessing/step01_baseyear.py` ✅ |
 | `02 - ... beneficiary database` | `prost2/preprocessing/step02_beneficiaries.py` ✅ |
 | `03 - ... affiliation rates` (+3 env variants) | `prost2/preprocessing/step03_affiliation.py` ⏳ |
-| `04 - ... transitions rates` (+3 env variants) | `prost2/preprocessing/step04_transitions.py` ⏳ |
+| `04 - ... transitions rates` (+3 env variants) | `prost2/transitions.py` (logic) + `…/step04_transitions.py` (wiring) ✅ `full` |
 | `05 - ... life cycle wage growth` | `prost2/preprocessing/step05_lifecycle_wages.py` ⏳ |
 | `06 - ... retirement/disability/survivor rates` | `prost2/preprocessing/step06_rates.py` ⏳ |
 | `1 - PROSTv2 - Build projection database` | `prost2/projection.py` ⏳ |
@@ -62,6 +62,42 @@ CLI options:
 The four **data environments** differ only in steps **03** and **04** (how
 affiliation and transition rates are estimated when less longitudinal data is
 available). Everything else is shared.
+
+## Modular architecture
+
+Each modelling stage is an independent, importable, testable module:
+
+| module | stage |
+|---|---|
+| `prost2/features.py` | shared feature engineering (spells, density, gaps, deciles) |
+| `prost2/transitions.py` | **Step 04** — T1 job-exit / T2 job-entry cloglog hazards |
+| `prost2/synthetic.py` | synthetic microdata generator (non-sensitive) |
+
+Planned next: `prost2/wages.py` (Step 05), `prost2/benefits.py` (pension award).
+
+## Synthetic data (for development without the real microdata)
+
+The real IMSS microdata is confidential and never enters the repo. Instead, a
+synthetic panel with the **same schema** drives development and tests:
+
+```bash
+cd toolkit
+python scripts/generate_synthetic_data.py --n-workers 50000   # -> ../Input/synthetic/
+```
+See `Input/synthetic/README.md` for the generating assumptions. The generator
+uses **known** monthly transition hazards (exit 0.03, entry 0.10), which the
+Step-04 tests validate the fitted models against.
+
+## Tests
+
+```bash
+cd toolkit
+python -m pip install -r requirements-dev.txt
+python -m pytest
+```
+`tests/test_synthetic.py` checks the generator (schema, ranges, density,
+determinism); `tests/test_transitions.py` checks that Step 04 recovers the
+known baseline hazards from synthetic data.
 
 ## Outputs (written to `Output/`)
 

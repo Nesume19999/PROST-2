@@ -1,0 +1,19 @@
+{
+  "config": {
+    "n_workers": 5000,
+    "start_year": 2005,
+    "end_year": 2024,
+    "seed": 20260609,
+    "annual_wage_growth": 0.04,
+    "wage_log_mean": 5.5,
+    "wage_log_sd": 0.5
+  },
+  "rows": 953604,
+  "workers": 5000,
+  "mean_density": 0.7714942470878897,
+  "known_baseline": {
+    "true_exit_hazard": 0.030000000000000027,
+    "true_entry_hazard": 0.09999999999999998,
+    "stationary_density": 0.769230769230769
+  }
+}
