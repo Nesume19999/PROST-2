@@ -1,0 +1,7 @@
+# Pipeline-generated / derived artifacts (reproducible, not tracked)
+/Output/
+Input/Defaults/transitions/transitions_*.csv
+
+# Python
+__pycache__/
+*.pyc
