@@ -55,7 +55,6 @@
 !**/*MEX*
 
 # Stata temporary files
-*.smcl
 *.log
 *.gph
 
