@@ -11,6 +11,13 @@ Description:	For building PROST v2 pension model
 
 //	INITIALIZATION
 	clear all
+
+//	----------------------------------------------------------------------
+//	RUTA LOCAL - carpeta del repositorio PROST-2 en tu PC
+//	(clear all borra los globals, por eso se define en cada archivo)
+//	----------------------------------------------------------------------
+	global root   "C:/Users/WB542352/OneDrive - WBG/Documents/GitHub/PROST-2"
+	global rawdir "${root}/MEX"	// microdata cruda del cliente (solo preprocesamiento)
 	pause on
 	set trace off
 	
@@ -19,8 +26,8 @@ Description:	For building PROST v2 pension model
 
 
 //	SET PARAMETERS, AND THE NAME OF FOLDER AND FILES OF THE EXERCISE:
-	local homedir 		= "C:\Users\Duncan\OneDrive\World Bank\MEX"
-	local inputdir		= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input"
+	local homedir 		= "${rawdir}"
+	local inputdir		= "${root}/Input"
 
 	local ben_data  = "3 Input from client - microdata about beneficiaries"
 

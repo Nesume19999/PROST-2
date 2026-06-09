@@ -22,6 +22,13 @@ ssc install ftools
 
 //	INITIALIZATION
 	clear all
+
+//	----------------------------------------------------------------------
+//	RUTA LOCAL - carpeta del repositorio PROST-2 en tu PC
+//	(clear all borra los globals, por eso se define en cada archivo)
+//	----------------------------------------------------------------------
+	global root   "C:/Users/WB542352/OneDrive - WBG/Documents/GitHub/PROST-2"
+	global rawdir "${root}/MEX"	// microdata cruda del cliente (solo preprocesamiento)
 	pause on
 	set trace off
 
@@ -29,8 +36,8 @@ ssc install ftools
 	local country  = "MEX"
 
 //	SET PARAMETERS, AND THE NAME OF FOLDER AND FILES OF THE EXERCISE:
-	local homedir 		= "C:\Users\Duncan\OneDrive\World Bank\MEX"
-	local lifecycledir 	= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\lifecycle wages"
+	local homedir 		= "${rawdir}"
+	local lifecycledir 	= "${root}/Input/Defaults/lifecycle wages"
 
 //	Simulation parameters
 	local minimum_age = 15	// Minimum age to consider (some young ages don't have a lot of data)
