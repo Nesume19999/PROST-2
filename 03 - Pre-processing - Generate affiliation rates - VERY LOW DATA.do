@@ -28,7 +28,7 @@ Note:	We assume that the low data environment is either cross sectional monthly
 //	(clear all borra los globals, por eso se define en cada archivo)
 //	----------------------------------------------------------------------
 	global root   "C:/Users/WB542352/OneDrive - WBG/Documents/GitHub/PROST-2"
-	global rawdir "${root}/MEX"	// microdata cruda del cliente (solo preprocesamiento)
+	global rawdir "${root}/Input"	// microdata cruda del cliente (solo preprocesamiento)
 	pause on
 	set trace off
 

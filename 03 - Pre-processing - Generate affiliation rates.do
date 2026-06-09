@@ -27,7 +27,7 @@ Revision: 	Rather than assign people to deciles according to where they are in t
 //	(clear all borra los globals, por eso se define en cada archivo)
 //	----------------------------------------------------------------------
 	global root   "C:/Users/WB542352/OneDrive - WBG/Documents/GitHub/PROST-2"
-	global rawdir "${root}/MEX"	// microdata cruda del cliente (solo preprocesamiento)
+	global rawdir "${root}/Input"	// microdata cruda del cliente (solo preprocesamiento)
 	pause on
 	set trace off
 
