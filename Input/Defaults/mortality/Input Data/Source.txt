@@ -1,0 +1,26 @@
+UN Age-Specific Mortality Rate Projections
+
+Life Tables - Single Ages
+Probability of death at each permutation of age, year, and gender
+
+
+
+Source: https://population.un.org/wpp/downloads?folder=Standard%20Projections&group=Mortality
+
+Data: Male - Medium projections (XLSX)
+https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/EXCEL_FILES/4_Mortality/WPP2024_MORT_F06_2_SINGLE_AGE_LIFE_TABLE_PROJECTIONS_MALE.xlsx
+
+Data: Female - Medium projections (XLSX)
+https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/EXCEL_FILES/4_Mortality/WPP2024_MORT_F06_3_SINGLE_AGE_LIFE_TABLE_PROJECTIONS_FEMALE.xlsx
+
+CSV sources:
+https://population.un.org/wpp/downloads?folder=Standard%20Projections&group=CSV%20format
+https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Life_Table_Complete_Medium_Male_2024-2100.csv.gz
+https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Life_Table_Complete_Medium_Female_2024-2100.csv.gz
+
+
+
+Prompt:
+Reformat the data in the excel files titled "UN Mortality Rates 2024 - Female" into the same format as the csv file named "mortality_MEX". Append the data in each tab of the excel sheet and save each country as a separate csv file named "mortality_female_ISO.csv" with the ISO suffix being the ISO3 Alpha code. Each final file should have the same starting three columns: age, variable, and sex. Age should range between 0 and 110, variable is equal to "mortality" sex is equal to "female". The remaining columns represent the probability of dying in each projection year. Each of these columns is labelled "yYYYY" where YYYY is the projected year. Replace any missing values (ages above 100) in the value column with 1. Combine all csv files into a zip file for easy downloading
+
+

@@ -1,0 +1,21 @@
+Historic mortality rates
+
+------------------------------
+UN Population By Age Projections
+Source: https://population.un.org/wpp/downloads?folder=Standard%20Projections&group=Population
+
+Population by Single Age - medium scenario
+Population on 01 January, by single age. Only medium is available.
+https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Population1JanuaryBySingleAgeSex_Medium_1950-2023.csv.gz
+
+
+
+
+------------------------------
+
+Deaths, by single age. Only medium is available.
+1950-2023 (gz)
+https://population.un.org/wpp/downloads?folder=Standard%20Projections&group=CSV%20format
+
+
+------------------------------

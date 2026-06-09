@@ -1,0 +1,17 @@
+UN Population By Age Projections
+
+Source: https://population.un.org/wpp/downloads?folder=Standard%20Projections&group=Population
+
+
+Population by Single Age - Male (XLSX)
+Male population by single age. De facto population as of 1 July of the year indicated classified by single age (0, 1, 2, ..., 99, 100+). Data are presented in thousands.
+https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/EXCEL_FILES/2_Population/WPP2024_POP_F01_2_POPULATION_SINGLE_AGE_MALE.xlsx
+
+
+
+Population by Single Age - Female (XLSX)
+Female population by single age. De facto population as of 1 July of the year indicated classified by single age (0, 1, 2, ..., 99, 100+). Data are presented in thousands.
+https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/EXCEL_FILES/2_Population/WPP2024_POP_F01_3_POPULATION_SINGLE_AGE_FEMALE.xlsx
+
+
+

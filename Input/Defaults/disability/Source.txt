@@ -1,0 +1,9 @@
+Possible sources:
+
+UN DISTAT database (incomplete and sporadic coverage)
+https://unstats.un.org/unsd/demographic/sconcerns/disability/disab2.asp
+
+
+
+Labour force by sex, age and disability status (thousands)	Annual	Disability Labour Market Indicators (DLMI)	Labour force
+https://ilostat.ilo.org/data/snapshots/labour-force-participation-rate/

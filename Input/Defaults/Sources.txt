@@ -1,0 +1,9 @@
+https://population.un.org/wpp/downloads?folder=Standard%20Projections&group=CSV%20format
+
+Population on 01 July, by single age. Medium Scenario
+https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_PopulationBySingleAgeSex_Medium_2024-2100.csv.gz
+
+
+
+Population on 01 July, by single age. Zero-migration scenario
+https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_PopulationBySingleAgeSex_Zero%20migration_2024-2100.csv.gz

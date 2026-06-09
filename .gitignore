@@ -1,0 +1,64 @@
+﻿# UN/WPP source data (download from population.un.org/wpp)
+**/WPP2024_*.csv
+**/WPP2024_*.xlsx
+**/undesa_*.xlsx
+
+# UN Migration source data
+**/UN-Migration-*.csv
+**/UN-Migration-*.dta
+**/UN-ISO3-codes.csv
+**/UN-iso3-codes.dta
+
+# UN Mortality and Fertility source data
+**/UN Mortality Rates*.xlsx
+**/UN Fertility Rates*.xlsx
+**/mortality_ISO.zip
+
+# ILO source data (download from ilostat.ilo.org)
+**/EAR_EHRG_*.dta
+**/EAR_EMTA_*.csv
+**/EAR_EMTA_*.dta
+**/EAP_2WAP_*.xlsx
+**/EAP_DWAP_*.xlsx
+
+# IMF WEO source data
+**/WEOOct2025all.xlsx
+
+# World Bank source data
+**/API_NY.GDP*.csv
+**/API_NY.GDP*.zip
+**/classification_country_groupings_*.csv
+
+# Large intermediate .dta files (regenerable from source data)
+**/Input data/*.dta
+**/Input Data/*.dta
+
+# Exclude all country-specific files (we only need MEX)
+**/fertility_*.csv
+**/mortality_*.csv
+**/net_migration_*.csv
+**/netmigration_*.csv
+**/population_*.csv
+**/population_historical_*.dta
+**/wage_*.csv
+**/cpi_*.csv
+**/affiliation_*.csv
+**/disability_rates_*.csv
+**/retirement_rates_*.csv
+**/survivor_rates_*.csv
+**/transitions_*.dta
+**/job_entry_model_*.ster
+**/job_exit_model_*.ster
+**/lifecycle_*.ster
+
+# But KEEP all MEX files (the exception)
+!**/*MEX*
+
+# Stata temporary files
+*.smcl
+*.log
+*.gph
+
+# OS files
+.DS_Store
+Thumbs.db

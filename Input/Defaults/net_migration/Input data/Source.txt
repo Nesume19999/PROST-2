@@ -1,0 +1,19 @@
+UN Net Migration
+
+Imputed as a residual from UN Medium projectios
+
+https://population.un.org/wpp/downloads?folder=Standard%20Projections&group=CSV%20format
+
+
+
+
+Population by Single Age - Population on 01 January, by single age. Medium scenario
+https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Population1JanuaryBySingleAgeSex_Medium_2024-2100.csv.gz
+
+
+
+Deaths, by single age. Medium scenario
+https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_DeathsBySingleAgeSex_Medium_2024-2100.csv.gz
+
+Births (thousands), Medium scenario
+https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/CSV_FILES/WPP2024_Fertility_by_Age1.csv.gz

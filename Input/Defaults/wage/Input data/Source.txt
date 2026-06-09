@@ -1,0 +1,23 @@
+International Labour Organisation
+
+ILOSTAT Earnings
+https://ilostat.ilo.org/data/snapshots/earnings/
+
+Average monthly earnings of employees
+Average monthly earnings of employees by sex and age (local currency)
+
+
+Gini Index of hourly earnings of employees by sex and age
+
+
+
+ILO ISO3 codes:
+https://ilostat.ilo.org/methods/concepts-and-definitions/classification-country-groupings/
+
+
+World Bank 
+
+GDP growth (annual %)
+https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG
+
+Data link: https://api.worldbank.org/v2/en/indicator/NY.GDP.MKTP.KD.ZG?downloadformat=csv

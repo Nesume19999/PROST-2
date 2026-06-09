@@ -1,0 +1,7 @@
+Possible sources:
+
+Labour force participation rate by sex and age -- ILO modelled estimates, Nov. 2025 (%)	Annual	ILO Modelled Estimates (ILOEST)	Labour force
+
+Labour force participation rate by sex and age (%)	Annual	Labour Force Statistics (LFS)	Labour force
+
+https://ilostat.ilo.org/data/snapshots/labour-force-participation-rate/

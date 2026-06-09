@@ -1,0 +1,17 @@
+UN Age-Specific Fertility Rate (ASFR) Calculations
+
+Fertility Rate: Number of births to women in a particular single age.
+
+Medium Variant
+
+Year: 2023
+
+Source: https://population.un.org/wpp/downloads?folder=Standard%20Projections&group=Fertility
+
+Data: https://population.un.org/wpp/assets/Excel%20Files/1_Indicator%20(Standard)/EXCEL_FILES/3_Fertility/WPP2024_FERT_F01_FERTILITY_RATES_BY_SINGLE_AGE_OF_MOTHER.xlsx
+
+Sex:
+1 Male
+2 Female
+
+TODO: List other countries here
