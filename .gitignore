@@ -61,3 +61,6 @@
 # OS files
 .DS_Store
 Thumbs.db
+
+# Large client microdata (kept locally, NOT in repo)
+**/2 Input from client*.dta
