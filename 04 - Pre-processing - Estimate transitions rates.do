@@ -30,6 +30,13 @@ Note: Here we define deciles as the last known decile of the person as the decil
 
 //	INITIALIZATION
 	clear all
+
+//	----------------------------------------------------------------------
+//	RUTA LOCAL - carpeta del repositorio PROST-2 en tu PC
+//	(clear all borra los globals, por eso se define en cada archivo)
+//	----------------------------------------------------------------------
+	global root   "C:/Users/WB542352/OneDrive - WBG/Documents/GitHub/PROST-2"
+	global rawdir "${root}/Input"	// microdata cruda del cliente (solo preprocesamiento)
 	pause on
 	set trace off
 
@@ -37,8 +44,8 @@ Note: Here we define deciles as the last known decile of the person as the decil
 	local country  = "MEX"
 
 //	SET PARAMETERS, AND THE NAME OF FOLDER AND FILES OF THE EXERCISE:
-	local homedir 		= "C:\Users\Duncan\OneDrive\World Bank\MEX"
-	local transdir		= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\transitions"
+	local homedir 		= "${rawdir}"
+	local transdir		= "${root}/Input/Defaults/transitions"
 
 //	Name of input data	
 	local long_data  = "2 Input from client - longitudinal microdata about affiliates.dta"
@@ -232,8 +239,8 @@ Note: Here we define deciles as the last known decile of the person as the decil
 	local country  = "MEX"
 
 //	SET PARAMETERS, AND THE NAME OF FOLDER AND FILES OF THE EXERCISE:
-	local homedir 		= "C:\Users\Duncan\OneDrive\World Bank\MEX"
-	local transdir		= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\transitions"
+	local homedir 		= "${rawdir}"
+	local transdir		= "${root}/Input/Defaults/transitions"
 
 //	Name of input data	
 	local long_data  = "2 Input from client - longitudinal microdata about affiliates.dta"
@@ -266,7 +273,7 @@ Note: Here we define deciles as the last known decile of the person as the decil
 	
 // TODO: The job estimates are OK but not great. We could maybe improve these estimates
 
-cd "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\transitions"
+cd "${root}/Input/Defaults/transitions"
 estimates use "job_entry_model_MEX_10_final"
 estimates replay "job_entry_model_MEX_10_final"
 capture drop entry_final

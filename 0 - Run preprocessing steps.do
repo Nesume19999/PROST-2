@@ -19,13 +19,20 @@ ssc install ftools
 
 //	INITIALIZATION
 	clear all
+
+//	----------------------------------------------------------------------
+//	RUTA LOCAL - carpeta del repositorio PROST-2 en tu PC
+//	(clear all borra los globals, por eso se define en cada archivo)
+//	----------------------------------------------------------------------
+	global root   "C:/Users/WB542352/OneDrive - WBG/Documents/GitHub/PROST-2"
+	global rawdir "${root}/Input"	// microdata cruda del cliente (solo preprocesamiento)
 	pause off
 	set trace off
 
 
 
 //	SET PARAMETERS, AND THE NAME OF FOLDER AND FILES OF THE EXERCISE:
-	local homedir = "C:\Users\Duncan\OneDrive\World Bank\Generic"
+	local homedir = "${root}"
 
 
 

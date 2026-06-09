@@ -12,6 +12,13 @@ Description:	For building PROST v2 pension model
 
 //	INITIALIZATION
 	clear all
+
+//	----------------------------------------------------------------------
+//	RUTA LOCAL - carpeta del repositorio PROST-2 en tu PC
+//	(clear all borra los globals, por eso se define en cada archivo)
+//	----------------------------------------------------------------------
+	global root   "C:/Users/WB542352/OneDrive - WBG/Documents/GitHub/PROST-2"
+	global rawdir "${root}/Input"	// microdata cruda del cliente (solo preprocesamiento)
 	pause on
 	set trace off
 	
@@ -20,15 +27,15 @@ Description:	For building PROST v2 pension model
 
 
 //	SET PARAMETERS, AND THE NAME OF FOLDER AND FILES OF THE EXERCISE:
-	local homedir 		= "C:\Users\Duncan\OneDrive\World Bank\MEX"
-	local inputdir		= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input"
-	local mortdir 		= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\mortality_obs"		// Default historical mortality data
-	local affdir 		= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\affiliation"			// Affiliation data
-	local disabilitydir	= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\disability"
-	local survivordir	= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\survivor"
-	local retiredir		= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\retirement"
+	local homedir 		= "${rawdir}"
+	local inputdir		= "${root}/Input"
+	local mortdir 		= "${root}/Input/Defaults/mortality_obs"		// Default historical mortality data
+	local affdir 		= "${root}/Input/Defaults/affiliation"			// Affiliation data
+	local disabilitydir	= "${root}/Input/Defaults/disability"
+	local survivordir	= "${root}/Input/Defaults/survivor"
+	local retiredir		= "${root}/Input/Defaults/retirement"
 
-	local histpopdir 	= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\population_obs"
+	local histpopdir 	= "${root}/Input/Defaults/population_obs"
 
 //	Input data names
 	local ben_data  		= "pensioners_MEX"
@@ -217,7 +224,7 @@ Description:	For building PROST v2 pension model
 //	Compute the pension entrance rates in terms of population (Note: population in in '000s)
 	generate oa_rate_pop 		= oa_pension_adj   / (pop * 1000)
 	generate disa_rate_pop 		= disa_pension_adj / (pop * 1000)
-	generate survival_rate_pop 	= oa_pension_adj   / (pop * 1000)
+	generate survival_rate_pop 	= survivor_pension_adj / (pop * 1000)
 	
 //	Keep only those years that we want to include (the most recent ones)
 	drop year

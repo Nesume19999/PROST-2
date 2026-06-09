@@ -24,6 +24,13 @@ Note:	We assume that the low data environment is either cross sectional monthly
 
 //	INITIALIZATION
 	clear all
+
+//	----------------------------------------------------------------------
+//	RUTA LOCAL - carpeta del repositorio PROST-2 en tu PC
+//	(clear all borra los globals, por eso se define en cada archivo)
+//	----------------------------------------------------------------------
+	global root   "C:/Users/WB542352/OneDrive - WBG/Documents/GitHub/PROST-2"
+	global rawdir "${root}/Input"	// microdata cruda del cliente (solo preprocesamiento)
 	pause on
 	set trace off
 
@@ -31,10 +38,10 @@ Note:	We assume that the low data environment is either cross sectional monthly
 	local country  = "MEX"
 	
 //	SET PARAMETERS, AND THE NAME OF FOLDER AND FILES OF THE EXERCISE:
-	local indir		 = "C:\Users\Duncan\OneDrive\World Bank\Generic\Input"
-	local homedir 	 = "C:\Users\Duncan\OneDrive\World Bank\MEX"
-	local histpopdir = "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\population_obs"
-	local affdir 	 = "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\affiliation"
+	local indir		 = "${root}/Input"
+	local homedir 	 = "${rawdir}"
+	local histpopdir = "${root}/Input/Defaults/population_obs"
+	local affdir 	 = "${root}/Input/Defaults/affiliation"
 
 //	Simulation parameters
 	local years_avg 	= 10  	// Number of years of back data that are averaged to generate 

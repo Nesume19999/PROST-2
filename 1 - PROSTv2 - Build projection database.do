@@ -29,6 +29,13 @@ TODO: Create GUI
 
 //	INITIALIZATION
 	clear all
+
+//	----------------------------------------------------------------------
+//	RUTA LOCAL - carpeta del repositorio PROST-2 en tu PC
+//	(clear all borra los globals, por eso se define en cada archivo)
+//	----------------------------------------------------------------------
+	global root   "C:/Users/WB542352/OneDrive - WBG/Documents/GitHub/PROST-2"
+	global rawdir "${root}/Input"	// microdata cruda del cliente (solo preprocesamiento)
 	pause off
 	set trace off
 	timer on 1
@@ -50,14 +57,14 @@ TODO: Create GUI
 	local country		= "MEX"
 	
 //	SET PARAMETERS, AND THE NAME OF FOLDER AND FILES OF THE EXERCISE:
-	local indir 		= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input"							// User inputs
-	local outdir 		= "C:\Users\Duncan\OneDrive\World Bank\Generic\Output"							// Projection outputs
-	local popdir 		= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\population"		// Default population data
-	local mortdir 		= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\mortality"		// Default mortality data
-	local affdir 		= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\affiliation"		// Affiliation data
-	local transdir 		= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\transitions"		// Transition matrix
-	local wagegrowdir 	= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\wage_growth"		// Wage growth projections
-	local lifecycledir 	= "C:\Users\Duncan\OneDrive\World Bank\Generic\Input\Defaults\lifecycle wages"	// Relative wage growth for different groups (age-gender-decile)
+	local indir 		= "${root}/Input"							// User inputs
+	local outdir 		= "${root}/Output"							// Projection outputs
+	local popdir 		= "${root}/Input/Defaults/population"		// Default population data
+	local mortdir 		= "${root}/Input/Defaults/mortality"		// Default mortality data
+	local affdir 		= "${root}/Input/Defaults/affiliation"		// Affiliation data
+	local transdir 		= "${root}/Input/Defaults/transitions"		// Transition matrix
+	local wagegrowdir 	= "${root}/Input/Defaults/wage_growth"		// Wage growth projections
+	local lifecycledir 	= "${root}/Input/Defaults/lifecycle wages"	// Relative wage growth for different groups (age-gender-decile)
 
 
 //	Names of input databases
@@ -77,7 +84,7 @@ TODO: Create GUI
 	local job_entry_model 		= "job_entry_model_MEX_10_final" // "job_entry_model_MEX_10_last_cod_log" //  job_entry_model_MEX_10_final"
 
 //	Wage model data
-	local lifecycle_model 		= "lifecycle_MEX_10" 	// Model estimates for wage growth 
+	local lifecycle_model 		= "lifecycle_wages_`country'" 	// Model estimates for wage growth (matches name saved by "05 - ... life cycle wage growth profiles.do")
 
 	
 	
