@@ -1,3 +1,4 @@
 # Large binary model inputs/outputs tracked with Git LFS
 *.dta  filter=lfs diff=lfs merge=lfs -text
 *.ster filter=lfs diff=lfs merge=lfs -text
+*.docx -diff
